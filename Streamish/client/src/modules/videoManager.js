@@ -21,7 +21,7 @@ export const addVideo = (video) => {
     });
 };
 
-export const searchByVideo = () => {
-    return fetch(baseUrl + '/search')
+export const searchByVideo = (terms) => {
+    return fetch(baseUrl + `/search?q=${terms}`)
         .then((res) => res.json())
 };

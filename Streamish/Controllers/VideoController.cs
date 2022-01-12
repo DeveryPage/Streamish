@@ -77,6 +77,17 @@ namespace Streamish.Controllers
             return Ok(videos);
         }
 
+        [HttpGet("search")]
+        public IActionResult Search(string q, bool sortDesc)
+        {
+            return Ok(_videoRepository.Search(q, sortDesc));
+        }
+
+        [HttpGet("searchHottest")]
+        public IActionResult SearchHottest(DateTime since, bool sortDesc)
+        {
+            return Ok(_videoRepository.SearchHottest(since, sortDesc));
+        }
 
     }
 }
