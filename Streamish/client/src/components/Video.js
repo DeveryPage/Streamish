@@ -1,5 +1,9 @@
 import React from "react";
 import { Card, CardBody } from "reactstrap";
+import { Link } from "react-router-dom";
+
+// ...
+
 
 const Video = ({ video }) => {
     return (
@@ -13,9 +17,9 @@ const Video = ({ video }) => {
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen />
 
-                <p>
+                <Link to={`/videos/${video.id}`}>
                     <strong>{video.title}</strong>
-                </p>
+                </Link>
                 <p>{video.description}</p>
             </CardBody>
         </Card>

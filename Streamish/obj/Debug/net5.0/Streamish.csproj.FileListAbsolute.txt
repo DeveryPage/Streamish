@@ -53,3 +53,4 @@ C:\Users\paged\~workspace\Streamish\Streamish\obj\Debug\net5.0\Streamish.genrunt
 C:\Users\paged\~workspace\Streamish\Streamish\bin\Debug\net5.0\client\package-lock.json
 C:\Users\paged\~workspace\Streamish\Streamish\bin\Debug\net5.0\client\package.json
 C:\Users\paged\~workspace\Streamish\Streamish\bin\Debug\net5.0\client\public\manifest.json
+C:\Users\paged\~workspace\Streamish\Streamish\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

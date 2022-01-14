@@ -20,6 +20,13 @@ namespace Streamish.Models
 
         public List<Video> Videos { get; set; }
 
+        [Required]
+        public int UserTypeId { get; set; }
 
+        [Required]
+        [StringLength(28, MinimumLength = 28)]
+        public string FirebaseUserId { get; set; }
+
+        public UserType UserType { get; set; }
     }
 }
